@@ -16,12 +16,12 @@ Find path to xaamp and  `C:\xampp\apache\conf\extra`  and open filename  `httpd-
 
 ```
 <VirtualHost *:80>
-   DocumentRoot "C:\xampp\htdocs\GITHUB\Web Technology\Assignments\Assignment 7\project1
+   DocumentRoot "C:\xampp\htdocs\web\Wt-assignment\Assignments\Assignment 7\project1
 "
    ServerName project1.local
 </VirtualHost>
 <VirtualHost *:80>
-   DocumentRoot "C:\xampp\htdocs\GITHUB\Web Technology\Assignments\Assignment 7\project2
+   DocumentRoot "C:\xampp\htdocs\web\wt-assignment\Assignments\Assignment 7\project2
 "
    ServerName project2.local
 </VirtualHost>
