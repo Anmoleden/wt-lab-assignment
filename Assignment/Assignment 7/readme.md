@@ -9,8 +9,8 @@ As a Web server, Apache is responsible for  **accepting directory (HTTP) request
 
 The concept of virtual hosts  **allows more than one Web site on one system or Web server**. The servers are differentiated by their host name. Visitors to the Web site are routed by host name or IP address to the correct virtual host. Virtual hosting allows companies sharing one server to each have their own domain names.
 
-#### ##  Step of creating a Virtual Hosts:
-### Update XAMP Virtual Host File
+####  Step of creating a Virtual Hosts:
+
 
 Find path to xaamp and  `C:\xampp\apache\conf\extra`  and open filename  `httpd-vhosts.conf`  and Change DocumentRoot and ServerName accordingly
 
