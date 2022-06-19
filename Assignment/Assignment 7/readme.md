@@ -11,8 +11,7 @@ The concept of virtual hosts  **allows more than one Web site on one system or W
 
 ####  Step of creating a Virtual Hosts:
 
-
-Find path to xaamp and  `C:\xampp\apache\conf\extra`  and open filename  `httpd-vhosts.conf`  and Change DocumentRoot and ServerName accordingly
+find path to xaamp and  `C:\xampp\apache\conf\extra`  and open filename  `httpd-vhosts.conf`  and Change DocumentRoot and ServerName accordingly
 
 ```
 <VirtualHost *:80>
