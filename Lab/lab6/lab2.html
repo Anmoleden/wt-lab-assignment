@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: Arial;
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+ 
+    
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+</style>
+
+<body>
+
+    
+
+    
+        <div class="mySlides">
+            <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t39.30808-6/285847583_1202502887231186_4077255336663076821_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeERGW701sd44wMxFKEc67Q7jkTtGWP8Z4qORO0ZY_xnimvySOI21jkQpUBdSXng5mwjj-zlT2Cv9bw9pC4aYzig&_nc_ohc=f9gSoEvauqYAX8J2t9P&_nc_ht=scontent.fbwa5-1.fna&oh=00_AT_NhVZjPdCQoo_G-qa-100W3HkverTkuNaIzTfwmznZ6w&oe=62B91D7E" style="width:900px"
+                onclick="currentSlide(1)">
+        </div>
+
+        <div class="mySlides">
+            <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t39.30808-6/285739503_1202503007231174_3275249386291131996_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeH1teQ6QcURGyEusdMD57AwyjY7jtuJpa_KNjuO24mlr3n0v2A6mgysPtOw0sobu_vKgk8fATkvMrUZhlKSXX5S&_nc_ohc=KXI3kxY2lpcAX_gkBWe&_nc_ht=scontent.fbwa5-1.fna&oh=00_AT-x5B0pbBaoDVkIXAjPIl0IXmqQxW0Dr6-YtL3Kk_ko9A&oe=62B8D84C" style="width:900px"
+                onclick="currentSlide(2)">
+        </div>
+
+        <div class="mySlides">
+            <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t1.6435-9/119212052_781455152669297_40325253962543305_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeEZO0cnesxBXG5pYr4a7zuwoThscwYk28ihOGxzBiTbyIuVnVQuLroCI4eMp2z7dB9OdPMA2rXsdigpBJUEssNn&_nc_ohc=DT2vMIS7ol0AX-dkGvk&_nc_ht=scontent.fbwa5-1.fna&oh=00_AT8UWvII0Wq18Ne2RE1FatjiMAO3h8Ir3_ugun35vdCmkA&oe=62D9E967" style="width:900px"
+                onclick="currentSlide(3)">
+        </div>
+
+        <div class="mySlides">
+            <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t1.6435-9/108026470_736467247168088_9201910061071507638_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEEFWxxjq6R5gVQBPNvwwzkhfiFZohZhteF-IVmiFmG1zbTTWqP6RvxzKCfct4_3ZIqtYEQo7riiwGwRQH1jWek&_nc_ohc=lNvOzl5D_-MAX9XMnwt&_nc_ht=scontent.fbwa5-1.fna&oh=00_AT8oiKCbZZTVmOwt7F-yo8RywR4fgdePDPL-wV-Q5mMn0g&oe=62D75B90" style="width:900px"
+                onclick="currentSlide(4)">
+        </div>
+
+        <div class="mySlides">
+            <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t1.6435-9/53419609_389402378541245_3689575695530328064_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGgXhJMzXwiznUShnXkgbxU5haIVm9SVzPmFohWb1JXM3he49heaqaGbE3cOauEs-8h4_SM5_YhfJICOhs2qDVX&_nc_ohc=olSTPsQWVt8AX-cxkQR&_nc_ht=scontent.fbwa5-1.fna&oh=00_AT8GDvU-FNykTY38i03I_Eas6acAFk3JpaFdV87DN4KbvQ&oe=62D83D13" style="width:900px"
+                onclick="currentSlide(5)">
+        </div>
+
+        <div class="mySlides">
+            
+            <img src="https://scontent.fbwa5-1.fna.fbcdn.net/v/t1.6435-9/120933702_801372257344253_5360532268232028989_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHtl8T5GKmVjKBMxbb2qiBxG-cURqacrAAb5xRGppysAFVPaMQdAhTF_9YR_reA67rrFbIdo-EencuqEG3vL-Bq&_nc_ohc=yfBDCJnBHVwAX8WqUfB&_nc_ht=scontent.fbwa5-1.fna&oh=00_AT9q3i1CMXLQ4LtB3Rufv03Ey1poryyxKBuyGKhtWQbK8A&oe=62D8CCC2" style="width:100%"
+                onclick="currentSlide(6)">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">-></a>
+        <a class="next" onclick="plusSlides(1)"><-</a>
+
+     
+
+
+ 
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
